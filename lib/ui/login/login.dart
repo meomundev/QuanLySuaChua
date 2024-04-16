@@ -1,4 +1,5 @@
 import 'package:app_maintain/other/color.dart';
+import 'package:app_maintain/ui/main/bottomNavigationBar/bottom_navigation_bar.dart';
 import 'package:app_maintain/ui/register/register.dart';
 import 'package:app_maintain/ui/welcome/welcome.dart';
 import 'package:flutter/gestures.dart';
@@ -116,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
             },
             decoration: InputDecoration(
               hintText: 'Enter your Username',
-              hintStyle: TextStyle(color: greyColorForText, fontSize: 14),
+              hintStyle: TextStyle(color: greyLightColor, fontSize: 14),
               fillColor: mainAppWhite,
               filled: true,
               focusedBorder: OutlineInputBorder(
@@ -164,7 +165,7 @@ class _LoginPageState extends State<LoginPage> {
             },
             decoration: InputDecoration(
                 hintText: '●●●●●●●●●●●●●',
-                hintStyle: TextStyle(color: greyColorForText, fontSize: 14),
+                hintStyle: TextStyle(color: greyLightColor, fontSize: 14),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: blueDark, width: 1.5),
                   borderRadius: BorderRadius.circular(4),
@@ -208,13 +209,13 @@ class _LoginPageState extends State<LoginPage> {
       height: 40,
       child: ElevatedButton(
           onPressed: () {
-            if (formKey.currentState!.validate()) {
-              //login
-            }
-            // Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => const MainPageController()));
+            // if (formKey.currentState!.validate()) {
+            //   //login
+            // }
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const MyBottomNavigationBar()));
           },
           style: ButtonStyle(
               overlayColor: MaterialStateProperty.resolveWith<Color>(

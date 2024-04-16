@@ -122,7 +122,7 @@ class _RegisterPageState extends State<RegisterPage> {
             },
             decoration: InputDecoration(
               hintText: 'Enter your Username',
-              hintStyle: TextStyle(color: greyColorForText, fontSize: 14),
+              hintStyle: TextStyle(color: greyLightColor, fontSize: 14),
               fillColor: mainAppWhite,
               filled: true,
               focusedBorder: OutlineInputBorder(
@@ -170,7 +170,7 @@ class _RegisterPageState extends State<RegisterPage> {
             },
             decoration: InputDecoration(
               hintText: '●●●●●●●●●●●●●',
-              hintStyle: TextStyle(color: greyColorForText, fontSize: 14),
+              hintStyle: TextStyle(color: greyLightColor, fontSize: 14),
               fillColor: mainAppWhite,
               filled: true,
               focusedBorder: OutlineInputBorder(

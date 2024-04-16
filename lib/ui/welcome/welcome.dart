@@ -57,7 +57,7 @@ class WelcomePage extends StatelessWidget {
           Text(
             'Quản Lý Sửa Chữa',
             style: TextStyle(
-                color: blueDark, fontWeight: FontWeight.bold, fontSize: 36),
+                color: blueDark, fontWeight: FontWeight.bold, fontSize: 40),
             textAlign: TextAlign.center,
           ),
           const SizedBox(
